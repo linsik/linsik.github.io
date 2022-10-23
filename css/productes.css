@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+.productesContainer {
+    background-color: white;
+    width: 1024px;
+    height: 250px;
+    margin: 30px;
+    display: flex;
+    border-radius: 5px;
+    margin: auto;
+}
+.productesContainerCost{
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+.divButtomSell{
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+    margin-left: 340px;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.divButtomSell p{
+    padding: 15px 25px;
+}
+.divButtomSell :hover{
+    background-color: navy;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
