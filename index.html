@@ -1,96 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<title>
-    фото котов
-</title>
-<link slyle rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="icon" type="x:icon" href="images/log.jpg">
-<meta name="viewport" content="width=device=width">
-    </head>
-    <body>
-        <img class="headerImg" width="100%" src="https://basik.ru/images/nice_fun_animals/048_nice_fun_animals.jpg">
-        <header>
-            <ul>
-                <li>
-                    <table>
-                        <tr>
-                            <td>
-                                <img width="150px"  src="images/log.jpg">
-                            </td>
-                            <td>
-                                <p>коты</p>
-                            </td>
-                        </tr>
-                    </table>
-                    
-                     
-                </li>           
-                <li class="buttom disable">
-                    <table>
-                        <tr>
-                           
-                            <td>
-                               <a><p>блог</p></a>
-                            </td>
-                        </tr>
-                    </table>
-                    
-                     
-                </li>                
-         
-                <li class="buttom">
-                    <table>
-                        <tr>
-                           
-                            <td>
-                               <a href="productes.html"><p>товары</p></a>
-                            </td>
-                        </tr>
-                    </table>
-                    
-                </li>
-                <br style="clear: both;">
-            </ul>
-        </header>
-       
-<div class = "Post">
-    <h2>Кошки</h2>
-    <img width="700" src="https://www.eg.ru/wp-content/uploads/2020/09/koshka110456.jpg">
-    <p style = "color: red;">
-        здарово!
-    </p>
+
+<head>
+    <title>
+        фото котов
+    </title>
+    <link slyle rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="x:icon" href="images/log.jpg">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+
+    <img class="headerImg" width="100%" src="https://basik.ru/images/nice_fun_animals/048_nice_fun_animals.jpg">
     
-    <!-- <iframe width="1200" height="720" src="https://www.youtube.com/embed/uXnLyUZYkVw" title="Пушистый апельсин знакомится с желтком.🐥" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="head">
+        <img width="150px" src="images/log.jpg">
+        <h1>коты</h1>
+        <a class="activated"><p>блог</p></a>
+        <a href="productes.html"><p>товары</p></a>
+    </div>
+
+    <div class="Post">
+        <h2>Кошки</h2>
+        <img width="700" src="https://www.eg.ru/wp-content/uploads/2020/09/koshka110456.jpg">
+        <p style="color: red;">
+            здарово!
+        </p>
+
+        <!-- <iframe width="100%" height="500px" src="https://www.youtube.com/embed/uXnLyUZYkVw" title="Пушистый апельсин знакомится с желтком.🐥" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     -->
-    <p>
-    
-        сегодня я вам покажу фотокошек и котов!
-    </p>
-</div>
-<div class = "Post">
-    <p>
-        Чёрный кот:
-    </p>
-   <img src="https://kartinkin.net/uploads/posts/2022-03/1647088237_47-kartinkin-net-p-kartinki-chernikh-kotov-54.jpg">
-   
-</div>
-<div class="footer">
-    <div class="info">
-        <div class="info-w">
-            <img src="https://sun6-22.userapi.com/s/v1/ig2/KjTb-izwtIDRPyr4F0DzVWm78kPAbiuVgeYipAWa4MnPHKbUqvygbU-PpVWcLZWWD5waPfLbqUNbyksqWM716VP7.jpg?size=200x0&quality=96&crop=0,0,2160,2160&ava=1" alt="">
-            <div>
-                <p>
-                    калащ
-                </p>
-            <a href="https://www.youtube.com/watch?v=KLwgJdYuQUA">ютуб</a>
+        <p>
+
+            сегодня я вам покажу фотокошек и котов!
+        </p>
+    </div>
+    <div class="Post">
+        <p>
+            Чёрный кот:
+        </p>
+        <img
+            src="https://kartinkin.net/uploads/posts/2022-03/1647088237_47-kartinkin-net-p-kartinki-chernikh-kotov-54.jpg">
+
+    </div>
+    <div class="footer">
+        <div class="info">
+            <div class="info-w">
+                <img src="https://sun6-22.userapi.com/s/v1/ig2/KjTb-izwtIDRPyr4F0DzVWm78kPAbiuVgeYipAWa4MnPHKbUqvygbU-PpVWcLZWWD5waPfLbqUNbyksqWM716VP7.jpg?size=200x0&quality=96&crop=0,0,2160,2160&ava=1"
+                    alt="">
+                <div>
+                    <p>
+                        калащ
+                    </p>
+                    <a class="youtube" href="https://www.youtube.com/channel/UC9n-12fpSYBlIzxVvRkShkg">ютуб</a>
+                </div>
             </div>
         </div>
+
+        <div>
+
+        </div>
     </div>
-    
-    <div>
-        
-    </div>
-</div>
 </body>
+<script>
+    alert("кот")
+    
+     let name = prompt("как тебя зовуть?")
+     alert("привет " + name);
+     if (confirm("ты кот?")) {
+        alert("молоко")
+     } else {
+        let a = Number (prompt("a"));
+     let b = Number (prompt("b"));
+     let c = a+b;
+     let d = a-b;
+     let e = a*b;
+     let f = a/b;
+     alert("a+b=" + c +
+     "   a-b=" + d +
+     "   a*b=" + e +
+     "   a/b=" + f);
+     }
+
+    
+</script>
+
 </html>
