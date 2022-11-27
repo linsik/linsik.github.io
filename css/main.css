@@ -1,42 +1,65 @@
-.Post{
-    width: 50%;
-   background-color: rgba(200,100,0,0.3);
-   margin:auto;
-   border-radius: 10px;
-   overflow:hidden;
-} 
-.Post h2 {
-    padding: 15px;
-} 
-.Post img {
-  width: 1000px;
+.Post {
+  width: 50%;
+  background-color: rgba(200, 100, 0, 0.3);
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
-header{
+.Post h2 {
+  padding: 15px;
+}
+
+.Post img {
+  width: 100%;
+}
+
+.head {
   background-color: blue;
   position: sticky;
   top: 0px;
   margin-bottom: 5px;
 }
-header ul {
+
+.head ul {
   list-style: none;
   margin: 0 0 0 0;
 }
-td img{
-  border-radius:50px;
+
+.head img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
 }
+button {
+  display: flex;
+  margin: 3px 10px 0px 10px;
+  float: right;
+}
+
+
 body {
   height: auto;
   margin: 0;
+  background-color: white;
 }
+body.dark-theme{
+  background-color: black;
+}
+.dark-theme button img{
+  content: url(images/moon.png)
+}
+
 .footer {
   background-color: rgb(10, 219, 10);
-  width: 100%;  
+  width: 100%;
   display: flex;
   color: white;
 }
+
 .footer div {
   flex: 1
 }
+
 .info div {
   display: flex;
 }
@@ -54,32 +77,136 @@ body {
   display: table;
   align-items: center;
 }
-header li{
+
+.head li {
   float: left;
   padding: 0px 10px;
 }
 
-.buttom :hover{
+.buttom :hover {
   cursor: pointer;
   background-color: navy;
 }
-.disable{
+
+.disable {
   pointer-events: none;
   background-color: chartreuse;
   font-weight: bold;
-  
+
 }
-@media(max-width:480px){
-  .headerImg{
+
+.head {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+a {
+
+  cursor: pointer;
+}
+
+a:hover {
+  color: white;
+}
+
+.activated {
+  color: white;
+  cursor: default;
+}
+
+.head img {
+  margin-left: 10px;
+}
+
+.head h1, p {
+  margin: 0;
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+@media(max-width:480px) {
+  .headerImg {
     content: url(../images/загруженное.jpg);
   }
-  header ul{
+
+  .head ul {
     margin: 0px;
     padding: 0px;
     font-size: small;
+    text-align: center;
   }
-  .Post{
+
+  .head ul li {
+    text-align: center;
+  }
+
+  .Post {
     width: 100%;
     border-radius: 0;
   }
+}
+.Like {
+  float: right;
+  font-size: 24px;
+  user-select: none;
+  display: flex;
+  margin-right: 3%;
+}
+.plus {
+  margin-right: 3px;
+  color: green;
+  cursor: pointer;
+}
+.minus{
+  margin-left: 3px;
+  color: red;
+  cursor: pointer;
+}
+
+.comment-feed{
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.comment-list{
+  margin: 0 0 12px 0;
+  padding: 0;
+  list-style: none;
+}
+.comment-list .user-comment{
+  position: relative;
+  display :flex ;
+  padding: 10px 5px;
+  margin-bottom: 6px;
+  margin-right: 12px;
+  border-right: 2px solid;
+  font-size: 14px;
+  font-weight: bold;
+}
+.comment-form{
+  display: flex;
+  margin-bottom: 30px;
+  padding: 20px 12px;
+}
+.comment-inner{
+  position: relative;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.comment-field{
+  width: 97%;
+  height: 30px;
+  padding: 0 10px;
+  border: solid;
+  background-color: chartreuse;
+  font: inherit;
+  font-size: 14px;
+  color: black;
+}
+.comment-form .button{
+  border-radius: 30px;
+  color: crimson;
+  align-items: center;
+  position: absolute;
 }

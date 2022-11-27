@@ -16,21 +16,36 @@ body {
 }
 
 .divButtomSell{
-    width: 100px;
-    height: 50px;
     background-color: brown;
+    width: 100px;
+    height: 50px;    
     margin-left: 340px;
     margin-top: 50px;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 5px;  
+      
 }
 .divButtomSell p{
-    padding: 15px 25px;
+    padding: 0;
 }
+
 .divButtomSell :hover{
-    background-color: navy;
-    border-radius: 5px;
+    background-color: navy;    
     cursor: pointer;
+}
+
+@media(max-width:757px){
+    header ul{
+        margin: 0px;
+        padding: 0px;
+        font-size: small;
+      }
+    .productesContainer{
+       height: auto; 
+       max-width: none;
+       width: 100%;
+       display: block;
+       border-radius: 0;
+    }
 
 }
 
